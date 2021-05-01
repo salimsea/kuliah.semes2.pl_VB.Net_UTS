@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{075212B9-27AD-4FA6-A7FC-B2536ABD9FC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication3.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication3</RootNamespace>
+    <AssemblyName>WindowsApplication3</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WindowsApplication3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WindowsApplication3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DaftarAnggota.Designer.vb">
+      <DependentUpon>DaftarAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DaftarAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaftarBukuTamu.Designer.vb">
+      <DependentUpon>DaftarBukuTamu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DaftarBukuTamu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBuku.Designer.vb">
+      <DependentUpon>DataBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataDaftarAnggota.Designer.vb">
+      <DependentUpon>DataDaftarAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataDaftarAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPeminjamBuku.Designer.vb">
+      <DependentUpon>DataPeminjamBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataPeminjamBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanDataBuku.Designer.vb">
+      <DependentUpon>LaporanDataBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanDataBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanDataPeminjam.Designer.vb">
+      <DependentUpon>LaporanDataPeminjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanDataPeminjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koneksi.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PeminjamBuku.Designer.vb">
+      <DependentUpon>PeminjamBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PeminjamBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PencarianBuku.Designer.vb">
+      <DependentUpon>PencarianBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PencarianBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RakBuku.Designer.vb">
+      <DependentUpon>RakBuku.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RakBuku.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates.Designer.vb">
+      <DependentUpon>Templates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Templates.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DaftarAnggota.resx">
+      <DependentUpon>DaftarAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaftarBukuTamu.resx">
+      <DependentUpon>DaftarBukuTamu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBuku.resx">
+      <DependentUpon>DataBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataDaftarAnggota.resx">
+      <DependentUpon>DataDaftarAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPeminjamBuku.resx">
+      <DependentUpon>DataPeminjamBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanDataBuku.resx">
+      <DependentUpon>LaporanDataBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanDataPeminjam.resx">
+      <DependentUpon>LaporanDataPeminjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeminjamBuku.resx">
+      <DependentUpon>PeminjamBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PencarianBuku.resx">
+      <DependentUpon>PencarianBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RakBuku.resx">
+      <DependentUpon>RakBuku.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Templates.resx">
+      <DependentUpon>Templates.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Wall_post_re_y78d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_online_ad_re_ol62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_By_the_road_re_vvs7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Location_search_re_ttoj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_Co_workers_re_1i6i.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
