@@ -37,12 +37,12 @@ Partial Class DataPeminjamBuku
         Me.dg_data_peminjam = New System.Windows.Forms.DataGridView()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txt_nama_buku = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txt_nama_peminjam = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.dt_tgl_pinjam = New System.Windows.Forms.DateTimePicker()
         Me.dt_tgl_kembali = New System.Windows.Forms.DateTimePicker()
+        Me.cmb_nama_buku = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.dg_data_peminjam, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -181,13 +181,6 @@ Partial Class DataPeminjamBuku
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "Tanggal Pinjam"
         '
-        'txt_nama_buku
-        '
-        Me.txt_nama_buku.Location = New System.Drawing.Point(124, 140)
-        Me.txt_nama_buku.Name = "txt_nama_buku"
-        Me.txt_nama_buku.Size = New System.Drawing.Size(384, 20)
-        Me.txt_nama_buku.TabIndex = 25
-        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -227,11 +220,21 @@ Partial Class DataPeminjamBuku
         Me.dt_tgl_kembali.Size = New System.Drawing.Size(384, 20)
         Me.dt_tgl_kembali.TabIndex = 45
         '
+        'cmb_nama_buku
+        '
+        Me.cmb_nama_buku.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_nama_buku.FormattingEnabled = True
+        Me.cmb_nama_buku.Location = New System.Drawing.Point(124, 139)
+        Me.cmb_nama_buku.Name = "cmb_nama_buku"
+        Me.cmb_nama_buku.Size = New System.Drawing.Size(384, 21)
+        Me.cmb_nama_buku.TabIndex = 46
+        '
         'DataPeminjamBuku
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1155, 350)
+        Me.Controls.Add(Me.cmb_nama_buku)
         Me.Controls.Add(Me.dt_tgl_kembali)
         Me.Controls.Add(Me.dt_tgl_pinjam)
         Me.Controls.Add(Me.Panel2)
@@ -248,7 +251,6 @@ Partial Class DataPeminjamBuku
         Me.Controls.Add(Me.dg_data_peminjam)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.txt_nama_buku)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_nama_peminjam)
         Me.Controls.Add(Me.Label1)
@@ -279,10 +281,10 @@ Partial Class DataPeminjamBuku
     Friend WithEvents dg_data_peminjam As DataGridView
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txt_nama_buku As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents txt_nama_peminjam As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents dt_tgl_pinjam As DateTimePicker
     Friend WithEvents dt_tgl_kembali As DateTimePicker
+    Friend WithEvents cmb_nama_buku As ComboBox
 End Class
